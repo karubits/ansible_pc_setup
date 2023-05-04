@@ -1,0 +1,28 @@
+---
+  vars:
+
+    version_step_cli: "v0.2.3"
+    version_bitwarden_cli: "0.1"
+    version_restic_restic: "0.1" 
+    version_rancher_rke: "0.1"
+    version_starship_starship: "0.1"
+    version_kubernetes_kompose: "0.1"
+
+  tasks:
+
+    - name: 
+      apt:
+        name:
+          - pipx
+
+    - name: Install tox
+      community.general.pipx:
+        name: 
+          - poetry
+          - black 
+          - diceware
+
+
+ansibleawx-client
+ansible-lint
+ansible
